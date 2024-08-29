@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Agritouuurrez </title>
     <link rel="stylesheet" href="css/stylenya.css">
     <link rel="website icon" type="png"
     href="gambar/LOGOOOJ.png">
