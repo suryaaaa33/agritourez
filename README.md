@@ -3,201 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Sayuran Segar</title>
-    <link rel="stylesheet" href="styles.css">
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1000px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: #333;
-}
-
-section#home img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.product {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.product h3 {
-    color: #4CAF50;
-}
-
-.product p {
-    color: #555;
-}
-
-.product button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.product button:hover {
-    background-color: #45a049;
-}
-
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
-}
-
-#cart-animation {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    z-index: 1000;
-}
-
-#cart-animation.visible {
-    opacity: 1;
-}
-
-#cart-animation.hidden {
-    opacity: 0;
-}
-  </style>
+    <title>AGRITOUREZ</title>
+    <link rel="stylesheet" href="css/stylenya.css">
+    <link rel="website icon" type="png"
+    href="gambar/LOGOOOJ.png">
 </head>
 <body>
     <header>
-        <h1>Toko Sayuran Segar</h1>
+        <nav> 
+            <img src="gambar/logoo.png" alt="logo">
+        </nav>
+        <h1>AGRITOUREZ</h1>
         <nav>
             <ul>
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#products">Produk</a></li>
-                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#cart">Keranjang</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home">
-        <h2>Selamat Datang di Toko Sayuran Segar</h2>
-        <p>Kami menyediakan berbagai macam sayuran segar langsung dari petani lokal.</p>
-        <img src="sayuran.jpeg" alt="Sayuran Segar">
+        <h2>Selamat Datang di Toko Sayuran Segar dan berbagai olahan susu</h2>
+        <p> Kami menjual berbagai macam sayuran segar langsung dari petani pangalengan, serta olahan olahan susu khas pangalengan.</p>
+        <img src="gambar/ilustrasi sayur.jpg" alt="Sayuran Segar">
     </section>
 
     <section id="products">
         <h2>Produk Kami</h2>
         <div class="product">
-            <img src="bayamm.jpeg" alt="Bayam">
-            <h3>Bayam</h3>
-            <p>Rp 10.000/kg</p>
-            <button onclick="addToCart(this)">Tambah ke Keranjang</button>
+            <img src="gambar/kentang.jpeg" alt="kentang">
+            <h3>kentang</h3>
+            <p>Rp 20.000/kg</p>
+            <button onclick="addToCart('kentang', 20000)">Tambah ke Keranjang</button>
         </div>
         <div class="product">
-            <img src="Tomato_je.jpg" alt="Tomat">
+            <img src="gambar/Tomato_je.jpg" alt="Tomat">
             <h3>Tomat</h3>
             <p>Rp 8.000/kg</p>
-            <button onclick="addToCart(this)">Tambah ke Keranjang</button>
+            <button onclick="addToCart('Tomat', 8000)">Tambah ke Keranjang</button>
         </div>
         <div class="product">
-            <img src="wortel.png" alt="Wortel">
+            <img src="gambar/wortel.png" alt="Wortel">
             <h3>Wortel</h3>
             <p>Rp 12.000/kg</p>
-            <button onclick="addToCart(this)">Tambah ke Keranjang</button>
+            <button onclick="addToCart('Wortel', 12000)">Tambah ke Keranjang</button>
         </div>
+        <div class="product">
+            <img src="gambar/kol.webp" alt="kol">
+            <h3>kol</h3>
+            <p>Rp 15.000/kg</p>
+            <button onclick="addToCart('kol',15000 )"> Tambah ke keranjang</button> 
+        </div>
+
+    
         <!-- Tambahkan produk lainnya di sini -->
     </section>
 
-    <section id="contact">
-        <h2>Kontak Kami</h2>
-        <p>Untuk pemesanan atau informasi lebih lanjut, hubungi kami di:</p>
-        <p>Email: info@toko-sayuran.com</p>
-        <p>Telepon: 0812-3456-7890</p>
+    <section id="product">
+    <h2>produk olahan susu</h2>
+       <div class="product">
+        <img src="gambar/susu.jpeg" alt="susu murni">
+        <h3>susu murni</h3>
+        <p>Rp 12.000/liter</p>
+        <button onclick="addToCart('susu murni', 12000)"> Tambah ke keranjang </button>
+    </div>
+    <div class="product">
+        <img src="gambar/permen susu.jpeg" alt="permen susu">
+        <h3>permen susu</h3>
+        <p>Rp 10.000/bungkus</p>
+        <button onclick="addToCart('permen susu', 10000)"> Tambah ke keranjang </button>
+    </div>
+
+
     </section>
 
+    <section id="cart">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: Rp <span id="totalAmount">0</span></p>
+        <button id="buyButton" onclick="buyItems()">Beli Sekarang</button>
+        <button id="clearButton" onclick="clearCart()">Batalkan Pesanan</button>
+    </section>
+
+    
     <footer>
-        <p>&copy; 2024 Toko Sayuran Segar. Semua hak cipta dilindungi.</p>
+        <p>&copy; 2024 AGRITOUREZ. untuk informasi lebih lanjut bisa hubungi, email surya, no hp : 0001 </p>
     </footer>
 
-    <div id="cart-animation" class="hidden">✔ Ditambahkan ke Keranjang</div>
-
-    <script>
-        function addToCart(button) {
-            var cartAnimation = document.getElementById("cart-animation");
-            cartAnimation.classList.remove("hidden");
-            cartAnimation.classList.add("visible");
-
-            setTimeout(function() {
-                cartAnimation.classList.remove("visible");
-                cartAnimation.classList.add("hidden");
-            }, 2000);
-        }
-    </script>
+    <script src="java/sistemnya.js"></script>
 </body>
 </html>
